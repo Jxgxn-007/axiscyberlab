@@ -1,4 +1,4 @@
-import roadmap from "./roadmapData";
+import roadmap from "./RoadmapData";
 import RoadmapStep from "./RoadmapStep";
 
 function Roadmap() {
