@@ -1,5 +1,7 @@
 import Navbar from "../components/layout/Navbar";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   Mail,
   Phone,
@@ -9,11 +11,34 @@ import {
 } from "lucide-react";
 
 function Contact() {
+  const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_ebcmz2x",
+      "template_q08lw6s",
+      form.current,
+      "klzijzAVHr2KXtGLO"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      form.current.reset();
+    })
+    .catch((error) => {
+      console.error(error);
+      alert("Failed to send message!");
+    });
+};
   return (
     <>
+    
       <Navbar />
 
       <main className="bg-[#060D1D] text-white min-h-screen">
+        
 
         {/* Hero */}
 
@@ -169,7 +194,7 @@ function Contact() {
       duration-300
     "
   >
-    <span className="font-bold">GH</span>
+    <FaGithub size={22} />
   </a>
 
 </div>
@@ -183,33 +208,45 @@ function Contact() {
                 Send us a Message
               </h2>
 
-              <form className="space-y-5 mt-8">
+              <form
+  ref={form}
+  onSubmit={sendEmail}
+  className="space-y-5 mt-8"
+>
+<input
+  type="text"
+  name="from_name"
+  placeholder="Full Name"
+  required
+  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
+/>
 
                 <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
-                />
+  type="email"
+  name="from_email"
+  placeholder="Email Address"
+  required
+  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
+/>
 
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
-                />
+               <input
+  type="text"
+  name="subject"
+  placeholder="Subject"
+  required
+  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
+/>
 
                 <textarea
-                  rows="6"
-                  placeholder="Your Message"
-                  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
-                ></textarea>
+  name="message"
+  rows="6"
+  placeholder="Your Message"
+  required
+  className="w-full p-4 rounded-xl bg-[#111E37] border border-[#223457] outline-none focus:border-orange-500"
+></textarea>
 
                 <button
+                type='submit'
                   className="
                   w-full
                   flex
