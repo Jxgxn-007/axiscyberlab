@@ -2,6 +2,7 @@ import Navbar from "../components/layout/Navbar";
 import { Link } from "react-router-dom";
 import { Shield, Target, Eye, Award } from "lucide-react";
 import Faculty from "../components/faculty/Faculty";
+import AxisDivider from "../components/common/AxisDivider";
 
 function About() {
   return (
@@ -67,6 +68,7 @@ function About() {
                 security challenges.
 
               </p>
+              <AxisDivider/>
 
             </div>
 
@@ -85,6 +87,7 @@ function About() {
                 and cloud security professionals.
 
               </p>
+              <AxisDivider/>
 
             </div>
 
@@ -93,7 +96,7 @@ function About() {
         </section>
 
         {/* Why Choose Us */}
-
+        <AxisDivider/>
         <section className="pb-24">
 
           <div className="max-w-7xl mx-auto px-6">
@@ -108,6 +111,7 @@ function About() {
               </h2>
 
             </div>
+            
 
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16">
 
@@ -171,17 +175,32 @@ function About() {
 
         <section className="pb-28">
 
-          <div className="max-w-5xl mx-auto px-6">
+  <div className="max-w-5xl mx-auto px-6">
 
-            <div className="rounded-3xl border border-[#223457] bg-[#0B1830] p-14 text-center">
+    <div
+      className="
+rounded-3xl
+border
+border-[#223457]
+bg-[#0B1830]
+px-10
+py-14
+min-h-[360px]
+flex
+flex-col
+justify-center
+items-center
+text-center
+"
+    >
 
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-4xl lg:text-5xl font-black text-white">
 
                 Ready To Start Your Cyber Security Journey?
 
               </h2>
 
-              <p className="mt-6 text-lg text-gray-400">
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-[#A5AFC1]">
 
                 Join thousands of learners and master cyber security
                 through structured roadmaps, practical labs and
@@ -208,7 +227,7 @@ function About() {
                 >
                   Start Learning
                 </Link>
-
+              
                 <Link
                   to="/roadmap"
                   className="

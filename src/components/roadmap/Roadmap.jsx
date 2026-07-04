@@ -35,73 +35,55 @@ function Roadmap() {
 
         {/* Desktop */}
 
-       <div className="hidden lg:flex flex-col items-center gap-10">
+       <div className="hidden lg:flex flex-col items-center gap-12">
 
   {/* Row 1 */}
-  <div className="grid grid-cols-2 gap-24 w-full">
+  <div className="grid grid-cols-2 gap-12 w-full">
     <RoadmapStep item={roadmap[0]} />
     <RoadmapStep item={roadmap[1]} />
   </div>
 
-  <div className="flex items-center justify-center gap-4">
-    <div className="w-40 h-[2px] bg-orange-500/40"></div>
-    <div className="w-4 h-4 rounded-full bg-orange-500"></div>
-    <div className="w-40 h-[2px] bg-orange-500/40"></div>
+  {/* Horizontal */}
+  <div className="flex items-center justify-center w-full">
+    <div className="flex-1 h-[2px] bg-orange-500/40"></div>
+    <div className="w-4 h-4 rounded-full bg-orange-500 mx-6"></div>
+    <div className="flex-1 h-[2px] bg-orange-500/40"></div>
   </div>
 
   {/* Row 2 */}
-  <div className="grid grid-cols-2 gap-24 w-full">
-    <div className="xl:ml-20">
-      <RoadmapStep item={roadmap[2]} />
-    </div>
-
-    <div className="xl:-ml-20">
-      <RoadmapStep item={roadmap[3]} />
-    </div>
+  <div className="grid grid-cols-2 gap-12 w-full">
+    <RoadmapStep item={roadmap[2]} />
+    <RoadmapStep item={roadmap[3]} />
   </div>
 
-  <div className="flex justify-center">
-    <div className="w-[2px] h-16 bg-orange-500/40"></div>
+  {/* Horizontal */}
+  <div className="flex items-center justify-center w-full">
+    <div className="flex-1 h-[2px] bg-orange-500/40"></div>
+    <div className="w-4 h-4 rounded-full bg-orange-500 mx-6"></div>
+    <div className="flex-1 h-[2px] bg-orange-500/40"></div>
   </div>
 
   {/* Row 3 */}
-  <div className="grid grid-cols-2 gap-24 w-full">
+  <div className="grid grid-cols-2 gap-12 w-full">
     <RoadmapStep item={roadmap[4]} />
     <RoadmapStep item={roadmap[5]} />
   </div>
 
-  <div className="flex justify-center">
-    <div className="w-[2px] h-16 bg-orange-500/40"></div>
+  {/* Horizontal */}
+  <div className="flex items-center justify-center w-full">
+    <div className="flex-1 h-[2px] bg-orange-500/40"></div>
+    <div className="w-4 h-4 rounded-full bg-orange-500 mx-6"></div>
+    <div className="flex-1 h-[2px] bg-orange-500/40"></div>
   </div>
 
   {/* Row 4 */}
-  <div className="grid grid-cols-2 gap-24 w-full">
-    <div className="xl:ml-20">
-      <RoadmapStep item={roadmap[6]} />
-    </div>
-
-    <div className="xl:-ml-20">
-      <RoadmapStep item={roadmap[7]} />
-    </div>
+  <div className="grid grid-cols-2 gap-12 w-full">
+    <RoadmapStep item={roadmap[6]} />
+    <RoadmapStep item={roadmap[7]} />
   </div>
 
 </div>
-        {/* Mobile */}
-
-        <div className="lg:hidden flex flex-col gap-8">
-
-          {roadmap.map((item) => (
-
-            <RoadmapStep
-              key={item.id}
-              item={item}
-            />
-
-          ))}
-
-        </div>
-
-      </div>
+</div>
 
     </section>
   );

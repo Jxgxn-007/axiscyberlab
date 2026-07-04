@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";
 import tools from "./toolsData";
 import ToolCard from "./ToolCard";
-
 function Tools() {
   return (
     <section className="relative bg-[#060D1D] py-28 overflow-hidden">
@@ -101,39 +102,75 @@ function Tools() {
 
           <h3 className="text-4xl font-bold text-white">
 
-            Explore Every Cyber Security Tool
+            Want to Explore?
 
           </h3>
 
-          <p className="mt-5 max-w-2xl mx-auto text-[#A5AFC1] text-lg">
+          <p className="mt-5 max-w-2xl mx-auto text-[#A5AFC1] text-lg leading-8">
 
-            Discover industry-standard tools with installation guides,
-            tutorials, practical labs and real-world use cases.
+            Need help choosing the right cyber security tools or learning path?
+            Get in touch with our team and we'll guide you based on your
+            interests and career goals.
 
           </p>
 
-          <button
-            className="
-            mt-10
-            px-8
-            py-4
-            rounded-xl
-            bg-orange-500
-            hover:bg-orange-600
-            transition-all
-            duration-300
-            hover:scale-105
-            font-semibold
-            text-white
-            "
-          >
-            View All Tools
-          </button>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-5 mt-10">
+
+            <Link to="/contact">
+
+              <button
+                className="
+                px-8
+                py-4
+                rounded-xl
+                bg-orange-500
+                hover:bg-orange-600
+                transition-all
+                duration-300
+                hover:scale-105
+                font-semibold
+                text-white
+                "
+              >
+                Contact Us
+              </button>
+
+            </Link>
+
+            <a
+              href="https://www.linkedin.com/company/axis-cyberlabs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+              inline-flex
+              items-center
+              gap-3
+              px-8
+              py-4
+              rounded-xl
+              border
+              border-[#223457]
+              bg-[#111E37]
+              text-white
+              font-semibold
+              hover:bg-orange-500
+              hover:border-orange-500
+              hover:scale-105
+              transition-all
+              duration-300
+              "
+            >
+
+              <FaLinkedin size={22} />
+
+              Join Our Community
+
+            </a>
+
+          </div>
 
         </div>
-
-      </div>
-
+        </div>
     </section>
   );
 }

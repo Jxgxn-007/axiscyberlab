@@ -1,4 +1,5 @@
 import HeroButtons from "./HeroButtons";
+import HeroStats from "./HeroStats";
 import { Typewriter } from "react-simple-typewriter";
 
 function HeroContent() {
@@ -102,53 +103,7 @@ function HeroContent() {
       {/* Buttons */}
 
       <HeroButtons />
-
-      {/* Statistics */}
-
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-
-        {[
-          {
-            number: "5000+",
-            title: "Students",
-          },
-          {
-            number: "40+",
-            title: "Courses",
-          },
-          {
-            number: "100+",
-            title: "Labs",
-          },
-          {
-            number: "30+",
-            title: "Tools",
-          },
-        ].map((item) => (
-
-          <div
-            key={item.title}
-            className="rounded-2xl border border-[#223457] bg-[#0B1830] p-5 transition-all duration-300 hover:border-orange-500 hover:-translate-y-1"
-          >
-
-            <h3 className="text-2xl font-bold text-orange-500">
-
-              {item.number}
-
-            </h3>
-
-            <p className="text-sm text-[#8E98AA] mt-2">
-
-              {item.title}
-
-            </p>
-
-          </div>
-
-        ))}
-
-      </div>
-
+      <HeroStats/>
     </div>
   );
 }

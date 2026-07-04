@@ -28,9 +28,7 @@ function Faculty() {
           </span>
 
           <h2 className="mt-6 text-5xl lg:text-6xl font-black text-white">
-
             Honorary Guest Lecturers
-
           </h2>
 
           <p className="mt-6 max-w-3xl mx-auto text-lg leading-8 text-[#A5AFC1]">
@@ -60,40 +58,65 @@ function Faculty() {
 
         {/* Bottom CTA */}
 
-        <div className="mt-24 rounded-3xl border border-[#223457] bg-[#0B1830] p-12 text-center">
+        <div className="mt-24 max-w-5xl mx-auto">
 
-          <h3 className="text-4xl font-bold text-white">
-
-            Learn From Industry Leaders
-
-          </h3>
-
-          <p className="mt-5 max-w-2xl mx-auto text-[#A5AFC1] text-lg leading-8">
-
-            Our faculty members and honorary guest lecturers are committed
-            to sharing practical knowledge, real-world cyber security
-            experience and industry best practices to prepare you for a
-            successful career.
-
-          </p>
-
-          <button
+          <div
             className="
-            mt-10
-            px-8
-            py-4
-            rounded-xl
-            bg-orange-500
-            hover:bg-orange-600
-            transition-all
-            duration-300
-            hover:scale-105
-            font-semibold
-            text-white
-            "
+rounded-3xl
+border
+border-[#223457]
+bg-[#0B1830]
+px-10
+py-14
+min-h-[360px]
+flex
+flex-col
+justify-center
+items-center
+text-center
+"
           >
-            Join Our Community
-          </button>
+
+            <h3 className="text-4xl lg:text-5xl font-black text-white">
+
+              Learn From Industry Leaders
+
+            </h3>
+
+            <p className="mt-6 max-w-3xl text-[#A5AFC1] text-lg leading-8">
+
+              Our faculty members and honorary guest lecturers are committed
+              to sharing practical knowledge, real-world cyber security
+              experience and industry best practices to prepare you for a
+              successful career.
+
+            </p>
+
+            <a
+              href="https://www.linkedin.com/company/axis-cyberlabs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+              mt-10
+              inline-flex
+              items-center
+              justify-center
+              px-8
+              py-4
+              rounded-xl
+              bg-orange-500
+              hover:bg-orange-600
+              hover:scale-105
+              transition-all
+              duration-300
+              font-semibold
+              text-white
+              "
+            >
+              Join Our Community
+            </a>
+
+          </div>
 
         </div>
 

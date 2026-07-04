@@ -1,5 +1,6 @@
 import Navbar from "../components/layout/Navbar";
 import { Link } from "react-router-dom";
+import AxisDivider from "../components/common/AxisDivider";
 import {
   ShieldCheck,
   Bug,
@@ -89,7 +90,7 @@ function Services() {
           </div>
 
         </section>
-
+        <AxisDivider/>
         {/* Services */}
 
         <section className="pb-28">
@@ -154,16 +155,30 @@ function Services() {
           </div>
 
         </section>
+        <AxisDivider/>
 
         {/* CTA */}
 
         <section className="pb-28">
+<div className="max-w-5xl mx-auto px-6">
 
-          <div className="max-w-5xl mx-auto px-6">
-
-            <div className="rounded-3xl border border-[#223457] bg-[#0B1830] p-14 text-center">
-
-              <h2 className="text-4xl font-bold">
+  <div
+    className="
+    rounded-3xl
+    border
+    border-[#223457]
+    bg-[#0B1830]
+    px-10
+    py-14
+    min-h-[360px]
+    flex
+    flex-col
+    justify-center
+    items-center
+    text-center
+    "
+  >
+<h2 className="text-4xl lg:text-5xl font-black text-white">
                 Ready to Secure Your Future?
               </h2>
 

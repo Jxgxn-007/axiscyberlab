@@ -1,6 +1,6 @@
 import domains from "./domainsData";
+import { Link } from "react-router-dom";
 import DomainCard from "./DomainCard";
-
 function Domains() {
   return (
     <section className="relative bg-[#060D1D] py-28 overflow-hidden">
@@ -63,36 +63,35 @@ function Domains() {
         <div className="mt-24 rounded-3xl border border-[#223457] bg-[#0B1830] p-12 text-center">
 
           <h3 className="text-4xl font-bold text-white">
+  Need Guidance?
+</h3>
 
-            Not Sure Where to Start?
+<p className="mt-5 max-w-2xl mx-auto text-[#A5AFC1] text-lg">
+  Our experts are here to help you choose the right
+  cyber security learning path based on your interests,
+  career goals and experience level.
+</p>
 
-          </h3>
 
-          <p className="mt-5 max-w-2xl mx-auto text-[#A5AFC1] text-lg">
-
-            Follow our structured Cyber Security Roadmap and
-            choose the best learning path based on your
-            interests and career goals.
-
-          </p>
-
-          <button
-            className="
-            mt-10
-            px-8
-            py-4
-            rounded-xl
-            bg-orange-500
-            hover:bg-orange-600
-            transition-all
-            duration-300
-            font-semibold
-            text-white
-            hover:scale-105
-            "
-          >
-            Explore Roadmap
-          </button>
+          <Link to="/contact">
+  <button
+    className="
+    mt-10
+    px-8
+    py-4
+    rounded-xl
+    bg-orange-500
+    hover:bg-orange-600
+    transition-all
+    duration-300
+    hover:scale-105
+    font-semibold
+    text-white
+    "
+  >
+    Contact Us
+  </button>
+</Link>
 
         </div>
 

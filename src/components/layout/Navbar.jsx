@@ -17,27 +17,47 @@ function Navbar() {
         <div className="flex items-center gap-4 cursor-pointer transition-all duration-300 hover:scale-105">
 
           <div className="w-20 h-20 rounded-xl overflow-hidden bg-white p-2 shadow-lg shadow-orange-500/20 border border-orange-500/20">
-            <img
-              src="/logo.jpg"
-              alt="Axis Cyber Labs"
-              className="w-full h-full object-contain"
-            />
+             <img
+    src="/logo.jpg"
+    alt="Axis Cyber Labs"
+    className="w-14 h-14 rounded-xl shadow-lg"
+  />
           </div>
 
-          <div>
-            <h1 className="text-4xl font-black text-white tracking-wide leading-none">
-              AXIS
-            </h1>
+          <div className="flex items-center gap-4">
 
-            <p className="text-orange-500 tracking-[8px] font-semibold text-sm mt-2">
-              CYBER LABS
-            </p>
+ 
 
-            <p className="text-gray-400 text-xs mt-1 hidden lg:block">
-              Building Cyber Experts
-            </p>
-          </div>
+        <div className="flex flex-col justify-center">
 
+  <h1
+    className="
+      text-[52px]
+      font-black
+      leading-none
+      tracking-tight
+      text-white
+    "
+  >
+    AXIS
+  </h1>
+
+  <h2
+    className="
+      mt-2
+      text-[20px]
+      font-black
+      uppercase
+      tracking-[8px]
+      text-orange-500
+    "
+  >
+    CYBER LABS
+  </h2>
+
+</div>
+
+</div>
         </div>
 
         {/* Navigation */}

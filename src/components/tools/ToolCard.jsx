@@ -28,18 +28,29 @@ function ToolCard({ tool }) {
         w-20
         h-20
         rounded-2xl
-        bg-[#111E37]
+        bg-white
         border
-        border-[#223457]
+        border-gray-200
         flex
         items-center
         justify-center
+        shadow-md
+        transition-all
+        duration-300
+        group-hover:scale-105
         "
-      >
+>
         <img
-          src={tool.logo}
-          alt={tool.name}
-          className="w-12 h-12 object-contain"
+            src={tool.logo}
+  alt={tool.name}
+  className="
+  w-12
+  h-12
+  object-contain
+  transition-all
+  duration-300
+  group-hover:scale-110
+  "
         />
       </div>
 

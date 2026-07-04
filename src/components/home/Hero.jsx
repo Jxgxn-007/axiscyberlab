@@ -1,6 +1,7 @@
 import HeroBackground from "./HeroBackground";
 import HeroContent from "./HeroContent";
 import HeroTerminal from "./HeroTerminal";
+import CircuitKolam from "../common/CircuitKolam";
 
 function Hero() {
   return (
@@ -26,7 +27,12 @@ function Hero() {
         </div>
 
       </div>
+      <CircuitKolam className="bottom-10 left-8" />
 
+<CircuitKolam
+  className="top-10 right-8"
+  rotate
+/>
      
     </section>
   );
