@@ -2,7 +2,20 @@ import { Link } from "react-router-dom";
 
 function HeroButtons() {
   return (
+    
     <div className="flex gap-4 mt-10">
+      <div
+  className="
+    absolute
+    right-0
+    top-20
+    w-[700px]
+    h-[700px]
+    rounded-full
+    bg-orange-500/5
+    blur-[180px]
+  "
+></div>
 
       <Link
         to="/roadmap"

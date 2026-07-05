@@ -9,7 +9,7 @@ import {
   Globe,
   Send,
 } from "lucide-react";
-
+import PageHero from "../components/common/PageHero";
 function Contact() {
   const form = useRef();
 
@@ -36,7 +36,7 @@ const sendEmail = (e) => {
     <>
     
       <Navbar />
-
+      
       <main className="bg-[#060D1D] text-white min-h-screen">
         
 
@@ -71,7 +71,7 @@ const sendEmail = (e) => {
             </p>
 
           </div>
-
+          
         </section>
 
         {/* Contact Section */}

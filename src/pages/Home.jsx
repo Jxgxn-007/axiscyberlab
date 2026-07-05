@@ -7,25 +7,24 @@ import Tools from "../components/tools/Tools";
 import LearningJourney from "../components/home/LearningJourney";
 import Courses from "../components/courses/Courses";
 import Footer from "../components/layout/Footer";
-import AxisDivider from "../components/common/AxisDivider";
 function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <AxisDivider/>
+      <Hero/>
+      
       <WhyChoose/>
-      <AxisDivider/>
+     
       <Roadmap />
-      <AxisDivider/>
+     
       <Domains/>
-      <AxisDivider/>
+     
       <Tools/>
-      <AxisDivider/>
+     
       <Courses/>
-      <AxisDivider/>
+     
       <LearningJourney />
-      <AxisDivider/> 
+      
       <Footer/>
     </>
   );

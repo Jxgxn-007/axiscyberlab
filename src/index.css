@@ -12,3 +12,61 @@ body{
   background:#060D1D;
   color:white;
 }
+.hero-kolam {
+  filter:
+    drop-shadow(0 0 8px rgba(249,115,22,.6))
+    drop-shadow(0 0 20px rgba(249,115,22,.35))
+    drop-shadow(0 0 40px rgba(249,115,22,.18));
+}
+
+.hero-kolam:hover{
+  filter:
+    drop-shadow(0 0 10px rgba(249,115,22,.9))
+    drop-shadow(0 0 30px rgba(249,115,22,.55))
+    drop-shadow(0 0 60px rgba(249,115,22,.3));
+} 
+/* -------------------------------- */
+/* AXIS HERO KOLAM */
+/* -------------------------------- */
+
+.hero-kolam{
+
+filter:
+drop-shadow(0 0 6px rgba(249,115,22,.45))
+drop-shadow(0 0 18px rgba(249,115,22,.28))
+drop-shadow(0 0 45px rgba(249,115,22,.18));
+
+animation:heroGlow 3s ease-in-out infinite;
+
+}
+
+@keyframes heroGlow{
+
+0%{
+
+filter:
+drop-shadow(0 0 6px rgba(249,115,22,.35))
+drop-shadow(0 0 18px rgba(249,115,22,.20))
+drop-shadow(0 0 40px rgba(249,115,22,.12));
+
+}
+
+50%{
+
+filter:
+drop-shadow(0 0 10px rgba(251,146,60,.85))
+drop-shadow(0 0 30px rgba(249,115,22,.55))
+drop-shadow(0 0 70px rgba(249,115,22,.25));
+
+}
+
+100%{
+
+filter:
+drop-shadow(0 0 6px rgba(249,115,22,.35))
+drop-shadow(0 0 18px rgba(249,115,22,.20))
+drop-shadow(0 0 40px rgba(249,115,22,.12));
+
+}
+
+}

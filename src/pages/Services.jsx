@@ -1,6 +1,6 @@
 import Navbar from "../components/layout/Navbar";
 import { Link } from "react-router-dom";
-import AxisDivider from "../components/common/AxisDivider";
+import PageHero from "../components/common/PageHero";
 import {
   ShieldCheck,
   Bug,
@@ -53,6 +53,12 @@ function Services() {
   return (
     <>
       <Navbar />
+      <PageHero
+  badge="OUR SERVICES"
+  title="Professional"
+  highlight="Cyber Security Services"
+  description="Explore our cyber security solutions, consulting, training programs and practical learning resources."
+/>
 
       <main className="bg-[#060D1D] text-white min-h-screen">
 
@@ -90,7 +96,7 @@ function Services() {
           </div>
 
         </section>
-        <AxisDivider/>
+        
         {/* Services */}
 
         <section className="pb-28">
@@ -155,7 +161,7 @@ function Services() {
           </div>
 
         </section>
-        <AxisDivider/>
+    
 
         {/* CTA */}
 

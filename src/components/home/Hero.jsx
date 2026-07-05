@@ -1,7 +1,6 @@
 import HeroBackground from "./HeroBackground";
 import HeroContent from "./HeroContent";
-import HeroTerminal from "./HeroTerminal";
-import CircuitKolam from "../common/CircuitKolam";
+import HeroKolam from "../../assets/HeroKolam.png";
 
 function Hero() {
   return (
@@ -20,19 +19,44 @@ function Hero() {
           </div>
 
           {/* Right Side */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <HeroTerminal />
-          </div>
+         <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative">
 
+  {/* Background Glow */}
+  <div
+    className="
+      absolute
+      w-[2000px]
+      h-[2000px]
+      rounded-full
+      bg-orange-500/10
+      blur-[180px]
+      animate-pulse
+    "
+  ></div>
+
+  {/* Hero Kolam */}
+  <img
+    src={HeroKolam}
+    alt="Axis Hero Kolam"
+    className="
+      hero-kolam
+      relative
+      z-10
+      w-[380px]
+      lg:w-[500px]
+      xl:w-[540px]
+      transition-all
+      duration-700
+      hover:scale-105
+      select-none
+      pointer-events-none
+    "
+  />
+
+</div>
         </div>
 
       </div>
-      <CircuitKolam className="bottom-10 left-8" />
-
-<CircuitKolam
-  className="top-10 right-8"
-  rotate
-/>
      
     </section>
   );

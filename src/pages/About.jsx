@@ -2,12 +2,16 @@ import Navbar from "../components/layout/Navbar";
 import { Link } from "react-router-dom";
 import { Shield, Target, Eye, Award } from "lucide-react";
 import Faculty from "../components/faculty/Faculty";
-import AxisDivider from "../components/common/AxisDivider";
-
+import PageHero from "../components/common/PageHero";
 function About() {
   return (
     <>
       <Navbar />
+      <PageHero
+  title="About"
+  highlight="Axis Cyber Labs"
+  description="Building the future of cyber security through practical learning, structured roadmaps and industry-focused training."
+/>
 
       <main className="bg-[#060D1D] text-white">
 
@@ -68,7 +72,6 @@ function About() {
                 security challenges.
 
               </p>
-              <AxisDivider/>
 
             </div>
 
@@ -87,7 +90,7 @@ function About() {
                 and cloud security professionals.
 
               </p>
-              <AxisDivider/>
+              
 
             </div>
 
@@ -96,7 +99,7 @@ function About() {
         </section>
 
         {/* Why Choose Us */}
-        <AxisDivider/>
+       
         <section className="pb-24">
 
           <div className="max-w-7xl mx-auto px-6">
